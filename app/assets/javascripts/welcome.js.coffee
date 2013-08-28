@@ -6,7 +6,7 @@
 window.addEventListener "DOMContentLoaded", (->
   #grab elements, create settings, etc.
   canvas = document.getElementById("canvas")
-  context = document.getContext("2d")
+  context = canvas.getContext("2d")
   video = document.getElementById("video")
   videoObj = video: true
   errBack = (error) ->
